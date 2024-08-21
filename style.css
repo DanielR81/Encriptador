@@ -14,6 +14,14 @@
 
 }
 
+body{
+
+    background-color: var(--color-primario);
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    
+}
 
 
 .header{
@@ -32,19 +40,9 @@ height: 4.6875vh;
 }
 
 
-
-body{
-
-    background-color: var(--color-primario);
-    box-sizing: border-box;
-    height: 100vh;
-    width: 100vw;
-    
-}
-
 .contenedor{
 
-padding: 0% 2.986111111vw 2.734375vh 2.986111111vw;
+padding: 0vh 2.986111111vw 2.734375vh 2.986111111vw;
 
 }
 
@@ -82,11 +80,13 @@ gap: 1.180555556%
 
     width: 54.79166667vw;
     height: 71.97265625vh;
+    color: var(--color-secundario);
     background-color: var(--color-primario);
     border: none; /* Quita el borde */
     resize: none; /* Opcional: evita que el usuario cambie el tamaño del textarea */
     outline: none; /* Elimina el borde cuando el textarea está enfocado */
-    font-size: 2rem;
+    font-size: 2rem
+    
 }
 
 .contenedor__texto__area__p{
