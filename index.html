@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Encriptador</title>
 
 </head>
@@ -30,7 +30,7 @@
                  
                 <div class="contenedor__texto__ingresado"> 
  
-                    <textarea class="contenedor__texto__area" placeholder="Ingrese un texto aquì"></textarea>
+                    <textarea class="contenedor__texto__area" placeholder="Ingrese un texto aquì" id="texto__encriptado" ></textarea>
                     <p class="contenedor__texto__area__p" >Solo letras minusculas y sin acentos</p>
 
                 </div>
@@ -38,8 +38,8 @@
                 
                 <div class="contenedor__botones">
 
-                    <button class="contenedor__botones__1">Encriptar</button>
-                    <button class="contenedor__botones__2" >Desencriptar</button>
+                    <button class="contenedor__botones__1"  onclick="encriptarTexto()">Encriptar</button>
+                    <button class="contenedor__botones__2" onclick="desencriptarTexto()">Desencriptar</button>
 
                 </div>
                    
@@ -47,23 +47,23 @@
             </div>
 
 
-            <div class="contenedor__resultado">
+            <div class="contenedor__resultado" >
 
-                <div class="contenedor__area__imagen">
+                <div class="contenedor__area__imagen" id ="imagen__niño">
 
                     <img class="imagen" src="assets/Muñeco.png" alt="Persona buscando texto">
                     
                 </div>     
 
-                <div class="contenedor__area__textos">
+                <div class="contenedor__area__textos" id ="parrafos__niño">
 
-
-                    
                     <p class="contenedor__area__textos__1"><strong>Ningún mensaje fue encontrado</strong></p>
 
                     <p class="contenedor__area__textos__2">Ingresa el texto que desees encriptar o desencriptar</p>
 
                 </div>
+
+                <textarea class="contenedor__resultado__area" id="resultado__del__boton" style="display: none;" readonly></textarea>
 
             </div>
 
@@ -81,7 +81,7 @@
        </div>
 
     </footer>
-
+<script src="app.js"></script>
 
 
 </body>
