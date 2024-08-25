@@ -38,8 +38,9 @@ align-items: center;
 
 .header__contenedor__imagen{
 
-width: 8.33333333333vw;
-height: 4.6875vh;
+width: 2.8472vw;
+height: 4.9804vh;
+padding: 0% 0% 0% 21px;
 
 }
 
@@ -224,16 +225,144 @@ font-size: 0.875rem;
 }
 
 
-@media (max-width: 1030px){
+@media (max-width: 768px){
+
+    .header{
+
+        height: 7vh;
+        display: flex;
+        align-items: center;
+        
+    }
+        
+    .header__contenedor__imagen{
+        
+        width: 41px;
+        height: 51px;
+        
+    }
  
-.contenedor__contenido{
+    .contenedor__contenido{
 
-display: flex;
-flex-direction: column;
-align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
 
-}
+    }
 
+    .contenedor__texto{
+
+    height: 74.8722vh;  
+    width: 89.5833vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2.2998vh;
+
+    }
+
+    .contenedor__texto__ingresado{
+
+        height: 66.8654vh;
+        width: 89.5833vw;
+
+    }
+
+    .contenedor__texto__area{
+
+        width: 86.9791vw;
+        height: 61.8398vh;
+
+    }
+
+    .contenedor__texto__area__p {
+
+        margin-top: 3.2367vh;
+
+    }
+
+    .contenedor__botones {
+
+        width: 89.5833vw;
+        height: 5.7069vh;
+
+    }
+
+    .contenedor__botones__1{
+
+       width: 43.4895vw; 
+
+    }
+
+
+    .contenedor__botones__2{
+
+        width: 43.4895vw; 
+
+    }
+
+
+    .contenedor__resultado{
+
+        width: 89.5833vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        gap: 14.1601vh;
+        text-align: center;
+        border-radius: 32px;
+        height: 28vh;
+        box-shadow: 0px 4px 10px rgba(10, 56, 113, 0.9); /* Aquí defines el sombreado */
+
+
+    }
+
+    .contenedor__area__imagen{
+
+        display: none;
+
+    }
+
+
+    .contenedor__area__textos{
+
+       align-items: center;
+       margin-top: 2.7257vh;
+
+    }
+
+
+    .contenedor__area__textos__1{
+
+        font-size: 1.8rem;
+        
+        }
+        
+        .contenedor__area__textos__2{
+        
+        margin-top: 1.5625vh;
+        font-size: 1.3rem;
+        font-family: var(--fuente-inter);
+        
+        }
+
+    
+    .contenedor__resultado__area{
+
+        width: 81.25vw;
+        height: 24vh;
+        margin-top: 0vh;
+
+    }
+
+
+    .footer{
+
+        font-size: 1.2rem;
+
+    }
+    
 }
 
 
